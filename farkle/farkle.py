@@ -1,21 +1,36 @@
 import random
 class Farkle:
+     rollNum = 6
+     player = None
+     thisRound = []
+     bank = []
+
      def __init__(self):
           self.rollNum = 6
           self.player = None
-
+          self.thisRound = []
+          self.bank = []
 
      # welcome_msg
-     print("Welcome to Farkle") 
+     print("Welcome to Farkle")
 
-     def roll_dice(self, dice, players):
+
+     def roll_dice(self):
      #Gets a randomly generated roll.
 		rolled = []
 		for i in range(self.rollNum):
 			rolled.append(random.randint(1,6))
 		return rolled
-     def reroll(dice, players):
 
+     def reroll(self):
+		self.bank = [] #taking the numbers from score 
+		self.thisRound = [] #
+		self.rollNum = 6;
+     
+     #took it from Samuel's code
+     def bank(self):
+      = bankmodule.create_bank()
+     print(bank)
 
 # def play(dice, players):
 
