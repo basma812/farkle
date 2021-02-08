@@ -1,7 +1,8 @@
 # import random
 print("hello world2")
 
-# welcome_msg
+# welcome_msg 
+print("Welcome to farkle or 10 000")
 
 
 # def play(dice, players):
