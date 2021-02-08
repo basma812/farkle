@@ -1,10 +1,12 @@
 import random
-from diceroll import dicesroll
+from diceroll import diceroll
 
-print("hello world2")
+#while True:
+
 
 # welcome_msg
-
+print("Hi! Let's play farkle!")
+number_of_players = input("How many players are you? ")
 
 # def play(dice, players):
 
