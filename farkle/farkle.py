@@ -1,8 +1,19 @@
 # import random
-print("hello world2")
+import random
 
 # welcome_msg
-print("Welcome to Farkle")
+print("Welcome to Farkle") 
+
+def RollDice():
+      number=random.randit(1,6)
+      print(number)
+def Menu():
+    print("1.Roll a Dice ")
+    print("2.Roll 2 Dice")
+    print("--------------")
+    print("Exit program")
+
+
 
 # def play(dice, players):
 
