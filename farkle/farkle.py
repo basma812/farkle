@@ -1,8 +1,10 @@
 # import random
-print("hello world2")
-print("samuels branch")
+from . import bankmodule
+
 
 # welcome_msg
+bank = bankmodule.create_bank()
+print(bank)
 
 
 # def play(dice, players):
