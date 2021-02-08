@@ -3,6 +3,7 @@ import random
 
 # welcome_msg
 print("Welcome to Farkle") 
+print("bye bitches")
 
 def RollDice():
       number=random.randit(1,6)
