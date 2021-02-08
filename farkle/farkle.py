@@ -31,10 +31,15 @@ class Farkle:
      def bank(self):
       = bankmodule.create_bank()
      print(bank)
+     
+def main():
+     game = Farkle()
+     #function for multi players or play against the computer?
+	game.play(player);
 
 # def play(dice, players):
 
-
+#start of the game, asking for how amny players will be
 
 # def score(dice, players):
 
@@ -63,3 +68,4 @@ class Farkle:
 
 
 # kanske def rounds(players):
+# till one of the player's score reach 10.000
