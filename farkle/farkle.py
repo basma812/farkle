@@ -1,4 +1,6 @@
-# import random
+import random
+from diceroll import dicesroll
+
 print("hello world2")
 
 # welcome_msg
