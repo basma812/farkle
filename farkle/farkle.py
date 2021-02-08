@@ -2,7 +2,7 @@
 print("hello world2")
 
 # welcome_msg
-
+print("Welcome to Farkle")
 
 # def play(dice, players):
 
