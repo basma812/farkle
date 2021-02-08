@@ -1,28 +1,24 @@
-# import random
 import random
+class Farkle:
+     def __init__(self):
+          self.rollNum = 6
+          self.player = None
 
-# welcome_msg
-print("Welcome to Farkle") 
-print("bye bitches")
 
-def RollDice():
-      number=random.randit(1,6)
-      print(number)
-def Menu():
-    print("1.Roll a Dice ")
-    print("2.Roll 2 Dice")
-    print("--------------")
-    print("Exit program")
+     # welcome_msg
+     print("Welcome to Farkle") 
 
+     def roll_dice(self, dice, players):
+     #Gets a randomly generated roll.
+		rolled = []
+		for i in range(self.rollNum):
+			rolled.append(random.randint(1,6))
+		return rolled
+     def reroll(dice, players):
 
 
 # def play(dice, players):
 
-
-# def roll_dice(dice, players):
-
-
-# def reroll(dice, players):
 
 
 # def score(dice, players):
