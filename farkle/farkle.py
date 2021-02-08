@@ -1,5 +1,5 @@
 # import random
-print("hello world")
+print("hello world2")
 
 # welcome_msg
 
