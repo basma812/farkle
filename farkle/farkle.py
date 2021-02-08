@@ -7,6 +7,26 @@ print("Welcome to farkle or 10 000")
 
 # def play(dice, players):
 
+def saveBank(self, roll, saveIndecies):
+		#This will save off the dice for new rolls. 
+			
+		for i in range(len(saveIndecies)):
+			self.saveBank.append(roll[saveIndecies[i-1]-1])
+		valid = self.validateSave()
+		if valid:
+			self.thisRound.append(self.saveBank)
+			self.newScore += self.getScore()
+		else:
+			#invalid... fix it?
+			#player action perhaps
+			#self.player.notifySaveDice to notify the next player.
+			asdf = 0
+		self.player.notifySaveDice(self.thisRound)
+		self.savedDice = []
+		self.rollNum = len(roll)-len(saveIndecies)
+		if self.rollNum == 0:
+			self.rollAgain()
+
 
 # def roll_dice(dice, players):
 
