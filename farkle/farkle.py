@@ -1,9 +1,9 @@
 import bankmodule as b
 import playmodule as p
-import keepDice
+import keepDice as k
 
 dice_list = [2, 2, 2, 4, 4, 4]
-keepDice.keepDice(dice_list)
+k.keepDice(dice_list)
 
 
 # welcome_msg
