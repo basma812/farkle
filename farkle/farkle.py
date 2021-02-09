@@ -1,5 +1,8 @@
 # import random
+
+import keepDice
 print("hello world2")
+keepDice.keepDice(dice_List)
 
 # welcome_msg
 
