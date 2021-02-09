@@ -15,7 +15,7 @@ def print_bank(bank):
         print(f" {player}\t\t|", end="")
     print()
     for player in bank.keys():
-        print("--------", end="")
+        print("--------------------", end="")
     print()
     print("|", end="")
     for points in bank.values():
@@ -23,7 +23,7 @@ def print_bank(bank):
     print()
     print("|", end="")
     for points in bank.values():
-        print("    \t|", end="")
+        print("    \t\t|", end="")
     print()
 
 

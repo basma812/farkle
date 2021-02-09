@@ -1,26 +1,18 @@
 import bankmodule as b
 import playmodule as p
-import keepDice as k
-
-dice_list = [2, 2, 2, 4, 4, 4]
-k.keepDice(dice_list)
 
 
-# welcome_msg
-bank = b.create_bank()
-b.print_bank(bank)
+# dice_list = [2, 2, 2, 4, 4, 4]
+# k.keepDice(dice_list)
 
 
-p.play(bank)
-
-
-b.print_winner(bank)
-
-
-def main(func):
+def main():
     # inner funtions
-    playerName = input("Hello player! What is your name? ")
-    print(playerName)
+    bank = b.create_bank()
+    print(bank)
+    b.print_bank(bank)
+    p.play(bank)
+    b.print_winner(bank)
 
 
 if __name__ == "__main__":

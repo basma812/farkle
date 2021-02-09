@@ -2,7 +2,6 @@ import random
 from dicegraphic import graphic
 
 # list of saved dices from previous throw
-savedlist = []
 
 
 def diceroll(savedlist):
@@ -13,6 +12,3 @@ def diceroll(savedlist):
         diceroll.append(random.randint(1, 6))
     graphic(diceroll)
     return diceroll
-
-
-diceroll(savedlist)

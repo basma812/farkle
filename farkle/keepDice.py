@@ -13,3 +13,7 @@ def keepDice(dice_List):
         current_Dice.append(die)
 
     print("Your currently chosen dice to keep are: ", current_Dice)
+    # check if you CAN save dis dice
+    #
+    #
+    return current_Dice
