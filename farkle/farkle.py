@@ -1,6 +1,19 @@
+import bankmodule as b
+import playmodule as p
+
+# welcome_msg
+bank = b.create_bank()
+b.print_bank(bank)
+
+
+p.play(bank)
+
+
+b.print_winner(bank)
+
+
 def main(func):
     # inner funtions
-
     playerName = input("Hello player! What is your name? ")
     print(playerName)
 
