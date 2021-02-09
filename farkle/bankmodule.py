@@ -12,14 +12,14 @@ def create_bank():
 def print_bank(bank):
     print("|", end="")
     for player in bank.keys():
-        print(f" {player}\t|", end="")
+        print(f" {player}\t\t|", end="")
     print()
     for player in bank.keys():
         print("--------", end="")
     print()
     print("|", end="")
     for points in bank.values():
-        print(f" {points}\t|", end="")
+        print(f" {points}\t\t|", end="")
     print()
     print("|", end="")
     for points in bank.values():
