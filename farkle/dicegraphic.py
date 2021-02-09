@@ -1,10 +1,8 @@
-import random
-
 def graphic(list):
     o = "╔═══════╗"
     u = "╚═══════╝"
     one = [o, "║       ║", "║   ■   ║", "║       ║", u]
-                        
+
     two = [o, "║     ■ ║", "║       ║", "║ ■     ║", u]
 
     three = [o, "║     ■ ║", "║   ■   ║", "║ ■     ║", u]
@@ -12,7 +10,7 @@ def graphic(list):
     four = [o, "║ ■   ■ ║", "║       ║", "║ ■   ■ ║", u]
 
     five = [o, "║ ■   ■ ║", "║   ■   ║", "║ ■   ■ ║", u]
-        
+
     six = [o, "║ ■   ■ ║", "║ ■   ■ ║", "║ ■   ■ ║", u]
 
     g = [one, two, three, four, five, six]
@@ -31,17 +29,10 @@ def graphic(list):
             printorder.append(g[4])
         elif i == 6:
             printorder.append(g[5])
-        
+
     for i in range(5):
         for j in range(d):
-            if j == d-1:
+            if j == d - 1:
                 print(printorder[j][i])
             else:
-                print(printorder[j][i] , end=" ", flush=True)
-        
-
-
-
-     
-    
-    
+                print(printorder[j][i], end=" ", flush=True)

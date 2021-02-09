@@ -4,7 +4,8 @@
 # kolla om den spelaren har 0 på bank-kontot
 # om den har det så kan den bara spara om omgångens poäng är minst 500
 # returnerar True eller False.
-# om den är False måste man fortsätta kolla denna funktion varje gång till den är True
+# om den är False måste man fortsätta kolla denna funktion varje gång till
+# den är True
 
 
 # bank ska vara variabeln för dictionaryn
