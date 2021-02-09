@@ -1,5 +1,10 @@
 import bankmodule as b
 import playmodule as p
+import keepDice
+
+dice_list = [2, 2, 2, 4, 4, 4]
+keepDice.keepDice(dice_list)
+
 
 # welcome_msg
 bank = b.create_bank()
