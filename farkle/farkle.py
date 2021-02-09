@@ -1,4 +1,5 @@
-#import random
+import random
+
 
 def main(func):
     #inner funtions
