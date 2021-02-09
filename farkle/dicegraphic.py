@@ -35,7 +35,7 @@ def graphic(list):
     for i in range(5):
         for j in range(d):
             if j == d-1:
-                print(printorder[j][i] , end="\n", flush=True)
+                print(printorder[j][i])
             else:
                 print(printorder[j][i] , end=" ", flush=True)
         
