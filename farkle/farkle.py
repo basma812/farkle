@@ -1,10 +1,10 @@
 # import random
-from . import bankmodule
+import bankmodule as b
 
 
 # welcome_msg
-bank = bankmodule.create_bank()
-print(bank)
+bank = b.create_bank()
+b.print_bank(bank)
 
 
 # def play(dice, players):
