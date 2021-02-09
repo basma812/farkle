@@ -1,41 +1,63 @@
-import random
-class Farkle:
-     rollNum = 6
-     player = None
-     thisRound = []
-     bank = []
+#import random
+#class Farkle:
+#     rollNum = 6
+#     player = None
+#     thisRound = []
+#     bank = []
+#
+#     def __init__(self):
+#          self.rollNum = 6
+#          self.player = None
+#          self.thisRound = []
+#          self.bank = []
+#
+#     # welcome_msg
+#     print("Welcome to Farkle")
+#
+#
+#     def roll_dice(self):
+#     #Gets a randomly generated roll.
+#		rolled = []
+#		for i in range(self.rollNum):
+#			rolled.append(random.randint(1,6))
+#		return rolled
+#
+#     def reroll(self):
+#		self.bank = [] #taking the numbers from score 
+#		self.thisRound = [] #
+#		self.rollNum = 6;
+#     
+#     #took it from Samuel's code
+#     def bank(self):
+#      = bankmodule.create_bank()
+#     print(bank)
 
-     def __init__(self):
-          self.rollNum = 6
-          self.player = None
-          self.thisRound = []
-          self.bank = []
+    
+def main(func):
+#inner funtions
+     def greet_mas
+#hussi code which is merging all codes in main so we can return main  
 
-     # welcome_msg
-     print("Welcome to Farkle")
-
-
-     def roll_dice(self):
-     #Gets a randomly generated roll.
-		rolled = []
-		for i in range(self.rollNum):
-			rolled.append(random.randint(1,6))
-		return rolled
-
-     def reroll(self):
-		self.bank = [] #taking the numbers from score 
-		self.thisRound = [] #
-		self.rollNum = 6;
+if __name__ == "__main__":
+    play = True
+    while play:
+        game = main()
+        game.Start()
+        again = raw_input("Would you like to play again? ")
+        while True:
+            if again.upper() in ['Y', 'YE', 'YES']:
+                 #maybe this will work for replay
+                 game.play(bank);
+                break
+            elif again.upper() in ['N', 'NO']:
+                #trying to make it quit the game
+                # or have to make a funtion for the game to quit 
+                play = False
+                break
+            else:
+                print("Please enter yes or no")
      
-     #took it from Samuel's code
-     def bank(self):
-      = bankmodule.create_bank()
-     print(bank)
-     
-def main():
-     game = Farkle()
-     #function for multi players or play against the computer?
-	game.play(player);
+	
 
 # def play(dice, players):
 
