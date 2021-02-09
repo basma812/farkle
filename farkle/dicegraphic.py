@@ -1,5 +1,5 @@
 import random
-diceroll = [random.randrange(1, 6, 1) for i in range(6)]
+
 def graphic(list):
     o = "╔═══════╗"
     u = "╚═══════╝"
