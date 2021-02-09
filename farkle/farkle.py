@@ -1,35 +1,32 @@
-import random
-
-
 def main(func):
-    #inner funtions
-     def greet_mas
-     playerName = input("Hello player! What is your name? ")
-#hussi code which is merging all codes in main so we can return main  
+    # inner funtions
+
+    playerName = input("Hello player! What is your name? ")
+    print(playerName)
+
 
 if __name__ == "__main__":
     play = True
     while play:
         game = main()
         game.Start()
-        again = raw_input("Would you like to play again? ")
+        again = input("Would you like to play again? ")
         while True:
-            if again.upper() in ['Y', 'YE', 'YES']:
-                 #maybe this will work for replay
-                 if __name__ == '__main__':
+            if again.upper() in ["Y", "YE", "YES"]:
+                # maybe this will work for replay
+                if __name__ == "__main__":
                     main()
                 break
-            elif again.upper() in ['N', 'NO']:
-                #trying to make it quit the game
-                # or have to make a funtion for the game to quit 
+            elif again.upper() in ["N", "NO"]:
+                # trying to make it quit the game
+                # or have to make a funtion for the game to quit
                 play = False
                 break
             else:
                 print("Please enter yes or no")
 
 
-
-#class Farkle:
+# class Farkle:
 #     rollNum = 6
 #     player = None
 #     thisRound = []
@@ -47,29 +44,25 @@ if __name__ == "__main__":
 #
 #     def roll_dice(self):
 #     #Gets a randomly generated roll.
-#		rolled = []
-#		for i in range(self.rollNum):
-#			rolled.append(random.randint(1,6))
-#		return rolled
+# 		rolled = []
+# 		for i in range(self.rollNum):
+# 			rolled.append(random.randint(1,6))
+# 		return rolled
 #
 #     def reroll(self):
-#		self.bank = [] #taking the numbers from score 
-#		self.thisRound = [] #
-#		self.rollNum = 6;
-#     
+# 		self.bank = [] #taking the numbers from score
+# 		self.thisRound = [] #
+# 		self.rollNum = 6;
+#
 #     #took it from Samuel's code
 #     def bank(self):
 #      = bankmodule.create_bank()
 #     print(bank)
 
-    
-
-     
-	
 
 # def play(dice, players):
 
-#start of the game, asking for how amny players will be
+# start of the game, asking for how amny players will be
 
 # def score(dice, players):
 
