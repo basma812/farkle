@@ -1,4 +1,33 @@
 #import random
+
+def main(func):
+    #inner funtions
+     def greet_mas
+     playerName = input("Hello player! What is your name? ")
+#hussi code which is merging all codes in main so we can return main  
+
+if __name__ == "__main__":
+    play = True
+    while play:
+        game = main()
+        game.Start()
+        again = raw_input("Would you like to play again? ")
+        while True:
+            if again.upper() in ['Y', 'YE', 'YES']:
+                 #maybe this will work for replay
+                 if __name__ == '__main__':
+                    main()
+                break
+            elif again.upper() in ['N', 'NO']:
+                #trying to make it quit the game
+                # or have to make a funtion for the game to quit 
+                play = False
+                break
+            else:
+                print("Please enter yes or no")
+
+
+
 #class Farkle:
 #     rollNum = 6
 #     player = None
@@ -33,29 +62,7 @@
 #     print(bank)
 
     
-def main(func):
-#inner funtions
-     def greet_mas
-#hussi code which is merging all codes in main so we can return main  
 
-if __name__ == "__main__":
-    play = True
-    while play:
-        game = main()
-        game.Start()
-        again = raw_input("Would you like to play again? ")
-        while True:
-            if again.upper() in ['Y', 'YE', 'YES']:
-                 #maybe this will work for replay
-                 game.play(bank);
-                break
-            elif again.upper() in ['N', 'NO']:
-                #trying to make it quit the game
-                # or have to make a funtion for the game to quit 
-                play = False
-                break
-            else:
-                print("Please enter yes or no")
      
 	
 
