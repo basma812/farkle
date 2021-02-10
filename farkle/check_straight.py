@@ -8,6 +8,6 @@ def check_straight(l):
             if l[2] != l[3]:
                 if l[3] != l[4]:
                     if l[4] != l[5]:
-                        return True
+                        return 1500
                     
-    return False
+    return 0
