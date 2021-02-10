@@ -1,7 +1,10 @@
-#vi ska checka ettor och femmor. ettor ger 100 styck och femmor 50.
-#först måste vi kolla så att det inte är ettor eller femmor i triss, fyrtal, eller femtal
-#t ex om det är ettor i triss och vi har två femmor. då ska vi inte checka efter ettor
-#eftersom de redan är i trissen
+# vi ska checka ettor och femmor. ettor ger 100 styck och femmor 50.
+# först måste vi kolla så att det inte är ettor eller femmor i triss,
+# fyrtal, eller femtal
+# t ex om det är ettor i triss och vi har två femmor. då ska vi inte checka
+# efter ettor
+# eftersom de redan är i trissen
+
 
 def checkones(dr):
     for i in dr:
@@ -11,6 +14,8 @@ def checkones(dr):
                 return 100
             if times == 2:
                 return 200
+
+
 def checkfives(dr):
     for i in dr:
         if i == 5:
@@ -18,7 +23,9 @@ def checkfives(dr):
             if times == 1:
                 return 50
             if times == 2:
-                return 100        
+                return 100
+
+
 def check_one_and_fives(dr):
     for i in dr:
         times = dr.count(i)
