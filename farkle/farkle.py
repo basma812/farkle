@@ -19,7 +19,7 @@ if __name__ == "__main__":
     play = True
     while play:
         game = main()
-        game.Start()
+        # game.Start()
         again = input("Would you like to play again? ")
         while True:
             if again.upper() in ["Y", "YE", "YES"]:
