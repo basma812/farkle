@@ -15,6 +15,7 @@ def keepDice(dice_list):
 
     print("you want to keep:  ", chosen_dice)
     points = die * 100
+    
     # check if you CAN save dis dice
     # if check_everything(current_dice):
     #       return chosen_dice, points?
