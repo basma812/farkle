@@ -2,14 +2,9 @@ import bankmodule as b
 import playmodule as p
 
 
-# dice_list = [2, 2, 2, 4, 4, 4]
-# k.keepDice(dice_list)
-
-
 def main():
     # inner funtions
     bank = b.create_bank()
-    print(bank)
     b.print_bank(bank)
     p.play(bank)
     b.print_winner(bank)

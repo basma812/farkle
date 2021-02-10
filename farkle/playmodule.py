@@ -11,25 +11,28 @@ def cls():
 
 def play(bank):
     play = True
-    winning_players = []
+    winning_player = ""
     dices = []
     newdices = []
 
     while play:
         # loop for every round
-        for player, values in bank.items():
+        for player, _ in bank.items():
             round_points = 0
+            print(f"{player.upper()}'s round!!!!!!")
             # if someone has over 10000
-            if winning_players:
+            if winning_player:
                 # check if the last round has played?
-                if winning_players[0] == player:
+                if winning_player == player:
                     play = False
                     break
 
-            input_choice = input(f"Do {player} want to throw [y/n]: ")
+            # "throwing dices"-loop ( a player-round )
+            input_choice = input(f"Do {player} want to throw dices [y/n]: ")
             while input_choice == "y":
 
                 newdices = d.diceroll(dices)
+                # choose which dices to keep, and check points
                 newdices, points = k.keepDice(newdices)
 
                 # farkle, didnt get combination
@@ -39,11 +42,13 @@ def play(bank):
                     break
                 else:
                     dices.extend(newdices)
-                    print("your dices ===")
+                    print(" === your saved dices === ")
                     dg.graphic(dices)
+
                     if len(dices) == 6:
                         print("dices reset, full hand(you got 6 dices again")
                         dices = []
+
                     round_points += points
                     print("current points = ", round_points)
                     input_choice = input(
@@ -57,9 +62,9 @@ def play(bank):
                         continue
 
             # every round - check winner
-            if bank[player] >= 10000:
-                winning_players.append(player)
+            if bank[player] >= 10000 and winning_player == "":
+                winning_player = player
                 print(f"{player} has reached 10000 points! Last round begins!")
 
-    cls()
-    b.print_bank(bank)
+            cls()
+            b.print_bank(bank)
