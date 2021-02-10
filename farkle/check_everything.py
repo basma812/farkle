@@ -3,12 +3,14 @@ import check_fivekind
 import check_sixkind
 import check_straight
 import check_three_pairs
+import check_fourpluspair
 
 
 def check_everything(dice_list):
     sum = 0
     sum += check_sixkind(dice_list)
     sum += check_straight(dice_list)
+    sum += check_fourpluspair(dice_list)
     sum += check_three_pairs(dice_list)
     sum += check_fivekind(dice_list)
     sum += check_fourkind(dice_list)
