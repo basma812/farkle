@@ -3,6 +3,7 @@ import keepDice as k
 import diceroll as d
 import os
 import dicegraphic as dg
+import check_deposit500 as cd
 
 
 def cls():
@@ -57,7 +58,7 @@ def play(bank):
                     )
                     # stay/save to bank
                     if input_choice == "n":
-                        bank[player] += round_points
+                        cd.check_deposit500(player, bank, round_points)
                         dices = []
                         continue
 
