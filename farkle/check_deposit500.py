@@ -14,9 +14,10 @@
 def check_deposit500(current_player, bank, tempscore):
     if bank.get(current_player) == 0:
         if tempscore >= 500:
-            # saveBank: funktion som hussein och Basma gjort
-            # saveBank()
+            bank[current_player] += tempscore
             return True
         else:
             # print("throw more dices or end turn and get zero points")
             return False
+    bank[current_player] += tempscore
+    return True

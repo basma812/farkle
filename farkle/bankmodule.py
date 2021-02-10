@@ -1,30 +1,28 @@
 # creates dictionary with players names and starting values 0
+import texttable as tt
+
+table = tt.Texttable()
+
+
 def create_bank():
     bank = {}
     players = int(input("How many players are playing?[2-6]: "))
     for player in range(players):
         name = input(f"Enter name of player {player+1}: ")
         bank[name] = 0
+    table.header(bank.keys())
+    table.add_row(bank.values())
     return bank
 
 
 # prints all players with their values in a table
 def print_bank(bank):
-    print("|", end="")
-    for player in bank.keys():
-        print(f" {player}\t\t|", end="")
-    print()
-    for player in bank.keys():
-        print("--------------------", end="")
-    print()
-    print("|", end="")
-    for points in bank.values():
-        print(f" {points}\t\t|", end="")
-    print()
-    print("|", end="")
-    for points in bank.values():
-        print("    \t\t|", end="")
-    print()
+    table.reset()
+    table.header(bank.keys())
+    table.add_row(bank.values())
+    s = table.draw()
+
+    print(s)
 
 
 # checks if any player have over 10000 points,

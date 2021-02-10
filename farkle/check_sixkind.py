@@ -7,3 +7,4 @@ def check_sixkind(dc):
             return 3000
     return 0
 
+

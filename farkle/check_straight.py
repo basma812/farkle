@@ -1,8 +1,8 @@
-#checks if its a straight from 1-6
+# checks if its a straight from 1-6
 def check_straight(l):
     l.sort()
     if len(l) != 6:
-        return False
+        return 0
     if l[0] != l[1]:
         if l[1] != l[2]:
             if l[2] != l[3]:

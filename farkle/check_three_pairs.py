@@ -1,4 +1,4 @@
-#checkar om det är trepar, returnerar True eller False
+# checkar om det är trepar, returnerar True eller False
 def check_three_pairs(list):
     list.sort()
     if len(list) != 6:
