@@ -8,5 +8,5 @@ def check_three_pairs(list):
             if list[4] == list[5]:
                 if list[0] != list[2]:
                     if list[2] != list[4]:
-                        return True
-    return False
+                        return 1500
+    return 0
