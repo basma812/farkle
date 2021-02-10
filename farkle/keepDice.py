@@ -1,3 +1,6 @@
+from check_everything import check_everything
+
+
 def keepDice(dice_list):
     chosen_dice = []
     keep_input = input(
@@ -14,8 +17,9 @@ def keepDice(dice_list):
         chosen_dice.append(dice_list[die - 1])
 
     print("you want to keep:  ", chosen_dice)
-    points = die * 100
-    
+    points = check_everything(chosen_dice)
+    if points == 0:
+        print("No combination found ")
     # check if you CAN save dis dice
     # if check_everything(current_dice):
     #       return chosen_dice, points?
