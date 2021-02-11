@@ -1,9 +1,9 @@
 import bankmodule as b
-import keepDice as k
-import diceroll as d
+import modules.keepDice as k
+import modules.diceroll as d
 import os
-import dicegraphic as dg
-import check_deposit500 as cd
+import modules.dicegraphic as dg
+import modules.check_deposit500 as cd
 import time
 
 

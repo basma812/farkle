@@ -1,5 +1,5 @@
 import random
-from dicegraphic import graphic
+from .dicegraphic import graphic
 
 # list of saved dices from previous throw
 

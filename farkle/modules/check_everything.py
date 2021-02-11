@@ -1,11 +1,11 @@
-from check_fourkind import check_fourkind
-from check_fivekind import check_fivekind
-from check_one_and_fives import check_one_and_fives
-from check_sixkind import check_sixkind
-from check_straight import check_straight
-from check_three_pairs import check_three_pairs
-from check_fourpluspair import check_fourpluspair
-from ThreeOfkindcheck import trissCheck as check_triss
+from .check_fourkind import check_fourkind
+from .check_fivekind import check_fivekind
+from .check_one_and_fives import check_one_and_fives
+from .check_sixkind import check_sixkind
+from .check_straight import check_straight
+from .check_three_pairs import check_three_pairs
+from .check_fourpluspair import check_fourpluspair
+from .ThreeOfkindcheck import trissCheck as check_triss
 
 
 def check_everything(dice_list):

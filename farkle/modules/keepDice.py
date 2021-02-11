@@ -1,4 +1,4 @@
-from check_everything import check_everything
+from .check_everything import check_everything
 
 
 def keepDice(dice_list):
