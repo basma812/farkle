@@ -5,7 +5,7 @@ from .check_sixkind import check_sixkind
 from .check_straight import check_straight
 from .check_three_pairs import check_three_pairs
 from .check_fourpluspair import check_fourpluspair
-from .ThreeOfkindcheck import trissCheck as check_triss
+from .check_triss import check_triss
 
 
 def check_everything(dice_list):

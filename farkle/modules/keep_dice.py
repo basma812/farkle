@@ -28,14 +28,3 @@ def keepDice(dice_list):
     # else:
     #   print("wrong choice")
     return chosen_dice, points
-
-
-# import re
-# def getFarkle(current_player, farkleCount, farklepattren):
-# farklepattren == "[2-46]"
-# 	if diceroll =! re.match(farklepattren)
-# 		print ("FARKLE"),
-# 		if farkleCount == 3:
-# 			print(-500)
-# 	else:
-# 		continue

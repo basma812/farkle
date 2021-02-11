@@ -1,4 +1,4 @@
-def trissCheck(dice_List_real):
+def check_triss(dice_List_real):
     # dice_List = [5, 6, 5, 6, 6, 5]
     threeOfkind = 0
     tempPlayerpoints = 0
