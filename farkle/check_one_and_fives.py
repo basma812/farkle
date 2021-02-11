@@ -53,5 +53,6 @@ def check_one_and_fives(dr):
                     sum+= 50
                 if times == 2:
                     sum+= 100
-    return sum    
+    return sum  
+
         
