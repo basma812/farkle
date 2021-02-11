@@ -4,6 +4,7 @@ import diceroll as d
 import os
 import dicegraphic as dg
 import check_deposit500 as cd
+import time
 
 
 def cls():
@@ -15,6 +16,7 @@ def play(bank):
     winning_player = ""
     dices = []
     newdices = []
+    farklecount = {}
 
     while play:
         # loop for every round
@@ -39,6 +41,10 @@ def play(bank):
                 # farkle, didnt get combination
                 if points == -1:
                     print("You got farkle, next player turn")
+                    farklecount[player] += 1
+                    if farklecount[player] == 3:
+                        bank[player] -= 500
+                        print("Triple Farkle! you loose 500 points! ")
                     dices = []
                     break
                 else:
@@ -47,11 +53,11 @@ def play(bank):
                     dg.graphic(dices)
 
                     if len(dices) == 6:
-                        print("dices reset, full hand(you got 6 dices again")
+                        print("Dices reset, full hand(you got 6 dices again) ")
                         dices = []
 
                     round_points += points
-                    print("current points = ", round_points)
+                    print("Points this round: ", round_points)
                     input_choice = input(
                         f"Do {player} want to "
                         "throw your remaining dices?: [y/n]"
@@ -67,5 +73,6 @@ def play(bank):
                 winning_player = player
                 print(f"{player} has reached 10000 points! Last round begins!")
 
+            time.sleep(500)
             cls()
             b.print_bank(bank)

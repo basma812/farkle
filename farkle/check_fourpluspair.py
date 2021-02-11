@@ -1,5 +1,5 @@
 # checks four of a kind plus a pair
-def fourpluspair(dc):
+def check_fourpluspair(dc):
     for i in dc:
         # times is how many times the element occurs in the list
         times = dc.count(i)

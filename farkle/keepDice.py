@@ -9,14 +9,14 @@ def keepDice(dice_list):
     split_input = keep_input.split(",")
 
     # if the user types nothing, there is farkle:
-    if keep_input == "":  # or check_farkle(dice_list):
+    if keep_input == "" or check_everything(dice_list) == 0:
         return dice_list, -1
 
     split_input_int = [int(item) for item in split_input]
     for die in split_input_int:
         chosen_dice.append(dice_list[die - 1])
 
-    print("you want to keep:  ", chosen_dice)
+    print("You want to keep:  ", chosen_dice)
     points = check_everything(chosen_dice)
     if points == 0:
         print("No combination found ")
@@ -26,3 +26,14 @@ def keepDice(dice_list):
     # else:
     #   print("wrong choice")
     return chosen_dice, points
+
+
+# import re
+# def getFarkle(current_player, farkleCount, farklepattren):
+# farklepattren == "[2-46]"
+# 	if diceroll =! re.match(farklepattren)
+# 		print ("FARKLE"),
+# 		if farkleCount == 3:
+# 			print(-500)
+# 	else:
+# 		continue

@@ -14,6 +14,7 @@ def checkones(dr):
                 return 100
             if times == 2:
                 return 200
+    return 0
 
 
 def checkfives(dr):
@@ -24,23 +25,40 @@ def checkfives(dr):
                 return 50
             if times == 2:
                 return 100
+    return 0
 
 
+# pluss ihop också förheLEBVETE===
 def check_one_and_fives(dr):
     for i in dr:
         times = dr.count(i)
-        if times == 3:
-            if i == 5:
-                return checkones(dr)
-            if i == 1:
-                return checkfives(dr)
-        if times == 4:
-            if i == 5:
-                return checkones(dr)
-            if i == 1:
-                return checkfives(dr)
         if times == 5:
             if i == 5:
                 return checkones(dr)
             if i == 1:
                 return checkfives(dr)
+        elif times == 4:
+            if i == 5:
+                return checkones(dr)
+            if i == 1:
+                return checkfives(dr)
+        elif times == 3:
+            if i == 5:
+                return checkones(dr)
+            if i == 1:
+                return checkfives(dr)
+        else:
+            for i in dr:
+                if i == 1:
+                    times = dr.count(i)
+                    if times == 1:
+                        return 100
+                    if times == 2:
+                        return 200
+                if i == 5:
+                    times = dr.count(i)
+                    if times == 1:
+                        return 50
+                    if times == 2:
+                        return 100
+    return 0
