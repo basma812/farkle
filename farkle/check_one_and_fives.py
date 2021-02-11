@@ -1,7 +1,10 @@
-#vi ska checka ettor och femmor. ettor ger 100 styck och femmor 50.
-#först måste vi kolla så att det inte är ettor eller femmor i triss, fyrtal, eller femtal
-#t ex om det är ettor i triss och vi har två femmor. då ska vi inte checka efter ettor
-#eftersom de redan är i trissen
+# vi ska checka ettor och femmor. ettor ger 100 styck och femmor 50.
+# först måste vi kolla så att det inte är ettor eller femmor i triss,
+# fyrtal, eller femtal
+# t ex om det är ettor i triss och vi har två femmor. då ska vi inte checka
+# efter ettor
+# eftersom de redan är i trissen
+
 
 def checkones(dr):
     for i in dr:
