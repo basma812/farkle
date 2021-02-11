@@ -17,6 +17,8 @@ def play(bank):
     dices = []
     newdices = []
     farklecount = {}
+    for player in bank.keys():
+        farklecount[player] = 0
 
     while play:
         # loop for every round
@@ -48,6 +50,7 @@ def play(bank):
                     dices = []
                     break
                 else:
+                    farklecount[player] = 0
                     dices.extend(newdices)
                     print(" === your saved dices === ")
                     dg.graphic(dices)
@@ -73,6 +76,6 @@ def play(bank):
                 winning_player = player
                 print(f"{player} has reached 10000 points! Last round begins!")
 
-            time.sleep(500)
+            time.sleep(1)
             cls()
             b.print_bank(bank)

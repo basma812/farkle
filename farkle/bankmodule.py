@@ -9,7 +9,7 @@ def create_bank():
     players = int(input("How many players are playing?[2-6]: "))
     for player in range(players):
         name = input(f"Enter name of player {player+1}: ")
-        bank[name] = 0
+        bank[name] = 9000
     table.header(bank.keys())
     table.add_row(bank.values())
     return bank
@@ -20,6 +20,7 @@ def print_bank(bank):
     table.reset()
     table.header(bank.keys())
     table.add_row(bank.values())
+    # table.row_width([5])
     s = table.draw()
 
     print(s)

@@ -31,7 +31,8 @@ def check_everything(dice_list):
 
     if check_triss(dice_list) > 0:
         sum += check_triss(dice_list)
-        sum += check_one_and_fives(dice_list)
+        if sum < 2500:
+            sum += check_one_and_fives(dice_list)
         return sum
 
     sum += check_one_and_fives(dice_list)

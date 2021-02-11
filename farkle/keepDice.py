@@ -3,14 +3,16 @@ from check_everything import check_everything
 
 def keepDice(dice_list):
     chosen_dice = []
+    # farkle
+    if check_everything(dice_list) == 0:
+        return dice_list, -1
+
     keep_input = input(
         "Which dice do you want to keep (comma separated index: e.g. 1,1,5)? "
     )
     split_input = keep_input.split(",")
 
     # if the user types nothing, there is farkle:
-    if keep_input == "" or check_everything(dice_list) == 0:
-        return dice_list, -1
 
     split_input_int = [int(item) for item in split_input]
     for die in split_input_int:
