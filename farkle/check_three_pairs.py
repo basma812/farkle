@@ -1,12 +1,12 @@
 # checkar om det är trepar, returnerar True eller False
-def check_three_pairs(list):
-    list.sort()
-    if len(list) != 6:
+def check_three_pairs(dice_list_r):
+    dice_list = sorted(dice_list_r)
+    if len(dice_list) != 6:
         return False
-    elif list[0] == list[1]:
-        if list[2] == list[3]:
-            if list[4] == list[5]:
-                if list[0] != list[2]:
-                    if list[2] != list[4]:
+    elif dice_list[0] == dice_list[1]:
+        if dice_list[2] == dice_list[3]:
+            if dice_list[4] == dice_list[5]:
+                if dice_list[0] != dice_list[2]:
+                    if dice_list[2] != dice_list[4]:
                         return 1500
     return 0

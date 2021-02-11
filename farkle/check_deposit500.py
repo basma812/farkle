@@ -17,7 +17,7 @@ def check_deposit500(current_player, bank, tempscore):
             bank[current_player] += tempscore
             return True
         else:
-            # print("throw more dices or end turn and get zero points")
+            print("You need 500 to get on tha board!")
             return False
     bank[current_player] += tempscore
     return True

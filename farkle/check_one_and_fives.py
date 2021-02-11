@@ -6,56 +6,58 @@
 # eftersom de redan är i trissen
 
 
-def checkones(dr):
-    for i in dr:
+def checkones(dice_list):
+    for i in dice_list:
         if i == 1:
-            times = dr.count(i)
+            times = dice_list.count(i)
             if times == 1:
                 return 100
             if times == 2:
                 return 200
-    return 0             
-def checkfives(dr):
-    for i in dr:
+    return 0
+
+
+def checkfives(dice_list):
+    for i in dice_list:
         if i == 5:
-            times = dr.count(i)
+            times = dice_list.count(i)
             if times == 1:
                 return 50
             if times == 2:
-                return 100  
+                return 100
     return 0
-def check_one_and_fives(dr):
+
+
+def check_one_and_fives(dice_list):
     sum = 0
-    for i in dr:
-        times = dr.count(i)
+    for i in dice_list:
+        times = dice_list.count(i)
         if times == 5:
             if i == 5:
-                return checkones(dr)
+                return checkones(dice_list)
             if i == 1:
-                return checkfives(dr)
-        if times == 4:
+                return checkfives(dice_list)
+        elif times == 4:
             if i == 5:
-                return checkones(dr)
+                return checkones(dice_list)
             if i == 1:
-                return checkfives(dr)
+                return checkfives(dice_list)
         if times == 3:
             if i == 5:
-                return checkones(dr)
+                return checkones(dice_list)
             if i == 1:
-                return checkfives(dr)
+                return checkfives(dice_list)
         else:
             if i == 1:
-                times = dr.count(i)
+                times = dice_list.count(i)
                 if times == 1:
-                    sum+= 100
+                    sum += 100
                 if times == 2:
-                    sum+= 200
+                    sum += 200
             if i == 5:
-                times = dr.count(i)
+                times = dice_list.count(i)
                 if times == 1:
-                    sum+= 50
+                    sum += 50
                 if times == 2:
-                    sum+= 100
-    return sum  
-
-        
+                    sum += 100
+    return sum
